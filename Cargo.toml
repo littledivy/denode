@@ -1,0 +1,18 @@
+[package]
+name = "denode"
+version = "0.1.0"
+build = "build.rs"
+authors = ["Divy Srivastava <dj.srivastava23@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "denode"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.3.3"
+
+[dependencies]
+deno_runtime = "0.3.0"
+neon = "0.3.3"
+deno_core = "0.73.0"

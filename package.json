@@ -1,0 +1,27 @@
+{
+  "name": "denode",
+  "version": "1.0.0",
+  "description": "Deno in Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cargo build",
+    "postbuild": "sudo cp ./target/debug/libdenode.so ./index.node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littledivy/denode.git"
+  },
+  "keywords": [
+    "deno",
+    "node",
+    "interop",
+    "rust"
+  ],
+  "author": "Divy Srivastava",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/littledivy/denode/issues"
+  },
+  "homepage": "https://github.com/littledivy/denode#readme"
+}
